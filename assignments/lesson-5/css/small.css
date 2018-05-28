@@ -1,0 +1,125 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'Allerta', sans-serif;
+  margin: auto;
+}
+
+header, nav, main, footer { 
+  max-width: 750px;
+  margin: inherit;
+  padding-bottom: 30px;
+}
+
+header {
+    background: white;
+    top: 0;
+}
+header h1 {
+    font-size: 22px;
+    color: #1B3440;
+    margin: auto;
+}
+header img {
+    width: 10%;
+    float: left;
+    margin-right: 1em;
+}
+header .subheading {
+    font-size: 18px;
+    color: #4A849F;
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+}
+
+nav {
+   background-color: #B4D6C6; 
+   margin: inherit;
+   padding: 10px;
+   overflow: hidden;
+}
+nav button {
+   
+}
+nav ul {
+   margin: auto;
+    }
+nav ul li {
+    float: left;
+    font-size: 18px;
+    color: #1B3440;
+    padding: 12px;
+    display: block;
+}
+nav ul li a {color: #1B3440 }
+nav ul li.active a { color: #ffffff }
+nav ul li a:hover {
+    background-color: #F2845C;
+    padding: inherit;
+}
+
+main div {
+    display: block;
+    border-width:5px;  
+    border-style:outset;
+    padding: 5px;
+    margin: .5em;
+}
+main div h1 { 
+    color: #1B3440;
+}
+main div h2 {
+    color: #F2845C;
+    font-size: 18px;
+}
+main div h3 { 
+    color: #4A849F;
+    font-size: 15px;
+}
+main figure { margin: 0 0 .2em 2%; width:96%; }
+main figure img { 
+    max-width: 100%; 
+    margin: 0 auto;
+}
+.weather-icon { 
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#treaty { 
+    width: auto;  
+}
+main p { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+main ul { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+section.forecast { 
+    display: none;
+}
+
+footer {
+    color: #F5F1D5;
+    background-color: #4A849F; 
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+#box-2 { 
+    background-color: #1B3440;
+    position: relative;
+    padding: 15px;
+    margin: -10px;
+    font-weight: bold;
+    text-align: center;
+    
+   
+}
