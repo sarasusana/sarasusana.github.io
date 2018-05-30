@@ -62,8 +62,11 @@ nav ul li {
     display: block;
     text-align: center;
 }
-nav ul li a {color: #1B3440 }
-nav ul li.active a { color: #ffffff }
+nav ul li a {
+    text-decoration: none;
+    color: #1B3440; 
+}
+nav ul li.active a { color: #ffffff; }
 nav ul li a:hover {
     background-color: #F2845C;
     padding: .5em;
