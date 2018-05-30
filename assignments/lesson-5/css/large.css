@@ -1,7 +1,11 @@
 @media only screen and (min-width: 64em) {
-    footer {
-        margin: auto;
-    }
- 
     
+    header, nav, main, footer { max-width: inherit; }
+    
+   nav {
+        max-width: inherit;
+        margin-top: 80px; 
+  }
+    
+
 }

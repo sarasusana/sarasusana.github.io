@@ -3,23 +3,24 @@
 <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Allerta|Raleway" rel="stylesheet">
         <meta name="description" content="Welcome to How's the Weather, you realiable and accurate site to know the weather report">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
-        <link href="https://fonts.googleapis.com/css?family=Allerta|Raleway" rel="stylesheet">
+        
 </head>
 <body>
 
   <header>
   <img id="logo" src="images/logo.png" alt="logo">
   <h1>How's the Weather</h1>
-  <h2 class="subheading">Be Prepared</h2>
+  <h2 class="subheading">Stay up to date</h2>
   </header>
 
   <nav>
-    <ul>
+    <ul class="text-nav">
     	<li><a href="#">Home</a></li>
     	<li><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
@@ -31,10 +32,10 @@
     
   <main>
   <figure>
-  	<img src="images/hero-image.jpg" alt="h-image">
+  	<img src="images/hero-image.jpg" alt="h-image" id="hero-image">
   </figure>
-  <div>
-    <h1>Franklin City</h1>
+  <div id="today-w">
+      <section id="today-weather"><h1>Franklin City</h1>
       <h2>Today's Weather</h2>
       <ul>
         <li>High: 90°</li>
@@ -42,17 +43,20 @@
         <li>Chance of Precipitation: 0%</li>
         <li>Wind: 5mph from the South West</li>
       </ul>
+     </section>
       
-      <h2>Weather Icon</h2>
-      <img class="weather-icon" src="images/cloudy.png" alt="franklin-weather">
+      <section id="weather-icon"><h2>Weather Icon</h2>
+      <img id="icon" src="images/cloudy.png" alt="franklin-weather">
+        </section>
       </div>
       
-      <div>
-      <h2>This day in History</h2>
-      <h3>Anti-Ballistic Missile Treaty</h3>
-        <figure><img id="treaty" src="images/anti-ballistic-missile-treaty.png" alt="treaty"></figure>
-      
-    <p>On this day in history, the ABM Treaty regulated the establishment of anti-ballistic missile shields against nuclear missiles. It was one of the most important treaties between the two superpowers during the Cold War.<br><br><strong>Learn more on <a href="https://www.armscontrol.org/factsheets/abmtreaty" target="_blank">Arms Control Association</a></strong>
+      <div id="history-day">
+      <section id="data-curious"><h2>This day in History</h2>
+      <h3>Igor Stravinsky's ballet Le Sacre du printemps is premiered</h3></section>
+          
+          <section id="curiosities"> <figure id="poster"><img src="images/stravinsky-poster.jpg" alt="treaty"><figcaption div="caption-tdh">Original Poster of the Premiere</figcaption></figure>
+          
+          <p>On this day in history, Igor Stravinsky performance sparked a riot in the audience as many felt its irregular beat and the percussive character was a sacrilege against music. Today, it is considered one of the key works of 20th-century art music.<br>In the mid-20th century, Stravinsky revised the orchestration for concert performance, and that version of the score remains the version that is most commonly performed.<br>In 1987, however, the ballet as it was first conceived and performed, with original set and costumes and Nijinsky’s choreography (which had been seen for only seven performances before it was superseded by new choreography from Léonide Massine), was painstakingly reconstructed and re-created by the Joffrey Ballet. The centenary of the ballet’s premiere prompted other ballet companies, notably the Mariinsky in St. Petersburg, to also revive the work in its original form.</p><br><br><strong>Learn more on <a href="https://www.britannica.com/topic/The-Rite-of-Spring" target="_blank">Encyclopedia Britannica</a></strong></section>
           </div>
       <div>
 <section class="forecast">
@@ -62,13 +66,27 @@
         <th class="ten-days" colspan="10" >10 Days Forecast</th>
         </tr>
         <tr>
-            <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
             <td>10</td>
         </tr>
         <tr>
-            <td>89°F</td><td>87°F</td><td>78°F</td><td>75°F</td><td>72°F</td>
+            <td>89°F</td>
+            <td>87°F</td>
+            <td>78°F</td>
+            <td>75°F</td>
             <td>72°F</td>
-            <td>79°F</td><td>83°F</td><td>85°F</td>
+            <td>72°F</td>
+            <td>79°F</td>
+            <td>83°F</td>
+            <td>85°F</td>
             <td>89°F</td>
         </tr>
         
@@ -85,18 +103,18 @@
       <p>Franklin, MI 87654</p>
       </section>
       
-      <section class="box-1">
+      <section class="box-2">
       <h3>Phone:</h3>
       <p>(801) 555-1234</p>
       </section>
       
-      <section class="box-1">
+      <section class="box-2">
       <h3>Email</h3>
       <p>contact@youurl.com</p>
       <p></p>
       </section>
           
-      <p id="box-2">&#169; 2018 &#8226; All right reserved</p>
+      <p id="box-3">&#169; 2018 &#8226; All right reserved</p>
     </footer>
 
 </body>

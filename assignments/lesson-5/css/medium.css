@@ -4,17 +4,65 @@
     
     nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-    section.forecast { 
-        display: inline-block;
+    header, nav, main, footer { max-width: 780px; }
+    
+    header img { width: 5.5%; }
+    
+    
+    nav ul li { 
+        display: inline;  
+    }
+    
+    nav ul { padding: .5em; }
+    
+    main div { 
         width: 100%;
+        height: auto;
+    }
+    
+    main figure img{ width: 100%; }
+    
+    #today-w { 
+        display: inline-flex;
+        width: 100%;
+        height: auto;
+    }
+    #today-weather { 
+        width: 50%;
+        height: 20px;
+    }
+    
+    #icon { width: 25%; }
+    
+    #history-day { display: inline-block;}
+    
+    div #poster { 
+        width: 20%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+    section.forecast { 
+        display: inline-table;
     }/* show the 10-day forecast with the medium view and up */
+    
     .ten-days { 
         text-align: center;
         font-family: 'Allerta', sans-serif;
-    }  
-    .forecast td, .forecast th { 
-        border: 1px solid #ddd;
-        padding: 8px;
+        color: #1B3440;
     }
-
+    
+    .forecast th, .forecast td  { 
+        border: 2px solid #B4D6C4;
+        text-align: center;
+        padding: .75em 1em;      
+    }
+    footer .box-1 { 
+        float: left; 
+        width: 50%;
+    }
+    
+    footer .box-2 { 
+        margin-left: 50%;
+    }
   }

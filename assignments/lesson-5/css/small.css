@@ -7,58 +7,74 @@ body {
 }
 
 header, nav, main, footer { 
-  max-width: 750px;
-  margin: inherit;
+  max-width: 540px;
   padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
     background: white;
     top: 0;
+    padding-bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: auto;
 }
 header h1 {
-    font-size: 22px;
+    font-size: 25px;
     color: #1B3440;
     margin: auto;
+    vertical-align: inherit;
 }
 header img {
-    width: 10%;
+    width: 16%;
     float: left;
     margin-right: 1em;
 }
 header .subheading {
-    font-size: 18px;
+    font-size: 20px;
     color: #4A849F;
     font-family: 'Raleway', sans-serif;
-    margin: auto;
+    margin: .25em;
 }
 
 nav {
-   background-color: #B4D6C6; 
-   margin: inherit;
-   padding: 10px;
+   background-color: #B4D6C6;
+   padding: inherit;
    overflow: hidden;
+   align-content: center;
+   margin-top: 60px;
 }
+
 nav button {
-   
+    
 }
 nav ul {
-   margin: auto;
+    margin: auto;
+    list-style-type: none;
+    align-content: center;
     }
 nav ul li {
-    float: left;
     font-size: 18px;
     color: #1B3440;
-    padding: 12px;
+    padding: 6px;
     display: block;
+    text-align: center;
 }
 nav ul li a {color: #1B3440 }
 nav ul li.active a { color: #ffffff }
 nav ul li a:hover {
     background-color: #F2845C;
-    padding: inherit;
+    padding: .5em;
 }
-
+#hero-image {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 main div {
     display: block;
     border-width:5px;  
@@ -77,20 +93,30 @@ main div h3 {
     color: #4A849F;
     font-size: 15px;
 }
-main figure { margin: 0 0 .2em 2%; width:96%; }
-main figure img { 
-    max-width: 100%; 
-    margin: 0 auto;
+main figure { 
+    margin: 0 .1em 2%; 
+    width:100%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
 }
-.weather-icon { 
-    width: 25%;
+main figure img { 
+    width: 100%;
+    height: auto;  
+}
+
+#weather-icon { 
+    width: 50%;
     display: block;
+}
+
+#icon { 
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-#treaty { 
-    width: auto;  
-}
+
 main p { 
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -106,20 +132,17 @@ section.forecast {
 footer {
     color: #F5F1D5;
     background-color: #4A849F; 
-    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
     padding: 10px;
     height: auto;
     width: 100%;
 }
-#box-2 { 
+#box-3 { 
     background-color: #1B3440;
-    position: relative;
     padding: 15px;
-    margin: -10px;
     font-weight: bold;
     text-align: center;
-    
-   
+    position: relative;
+    margin: -10px;
 }
