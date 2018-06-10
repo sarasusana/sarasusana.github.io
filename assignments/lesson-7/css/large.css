@@ -1,0 +1,22 @@
+@media only screen and (min-width: 64em) {
+    
+    header, nav, main, footer { 
+        max-width: 64rem;
+        margin: auto;
+    }
+    
+    #navigation {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+    
+    nav ul li a { padding: .6rem 1rem; }
+    main div h1 { text-align: center;}
+div.container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    grid-row-gap: 1em;
+}
+div.responsive:hover {box-shadow: 5px 5px 10px gray;}
+}
