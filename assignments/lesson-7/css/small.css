@@ -145,7 +145,7 @@ footer {
     clear: both;
 }
 
-div.container { 
+.container { 
     display: grid;
 }
 div.responsive { width: 100%; }
@@ -153,4 +153,16 @@ div.gallery {
     border: 1px solid #ccc; 
 }
 
+.franklin-box, .history-box, .windchill-box {
+    display: flex;
+    flex-direction: column;
 }
+
+ {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+

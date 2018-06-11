@@ -13,7 +13,7 @@
     
     nav ul li a { padding: .6rem 1rem; }
     main div h1 { text-align: center;}
-div.container {
+.container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
     grid-row-gap: 1em;

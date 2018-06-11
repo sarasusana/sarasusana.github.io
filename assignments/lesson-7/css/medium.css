@@ -31,23 +31,29 @@
     }
     
       section.forecast { 
-          display: inline-table;
+          display: grid;
     }
     
     main figure img{ width: 100%; }
     
-    #today-w { 
-        display: inline-block;
+   /* #today-w { 
         width: 100%;
         height: auto;
     }
     #today-weather { 
         width: 100%;
     }
-    
+        
     #description { float: left; }
     
-    #description2 { margin-left: 60%; }
+    #description2 { margin-left: 60%; }*/
+    
+    .franklin-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
     
     #icon { width: 25%; }
     
@@ -64,6 +70,7 @@
     grid-row-end: 10;
     padding: .5em;
     border: 2px solid #B4D6C4;
+    
 }
 
 .item {
@@ -75,16 +82,48 @@
 }
 
     
-    #history-day { display: inline-block;}
+    /*#history-day { 
+        display: inline-block;
+    }
     
     div #poster { 
         width: 20%;
         float: right;
         margin-left: 1em;
-    }
+    }*/
     
  
-    }/*show the 10-day forecast with the medium view and up */
+    .history-box {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+       
+    footer .box-1 { 
+        float: left; 
+        width: 50%;
+    }
+    
+    .windchill-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    footer .box-2 { 
+        margin-left: 50%;
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    grid-row-gap: 1em;
+    }
+
+
+}/*show the 10-day forecast with the medium view and up */
     
       /* .weather-table { 
         border-collapse: collapse;
@@ -103,20 +142,6 @@
     }*/
 
 
-    
-    footer .box-1 { 
-        float: left; 
-        width: 50%;
-    }
-    
-    footer .box-2 { 
-        margin-left: 50%;
-    }
+ 
 
-div.container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    grid-row-gap: 1em;
-}
 
-  }

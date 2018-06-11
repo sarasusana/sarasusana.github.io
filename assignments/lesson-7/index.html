@@ -13,7 +13,6 @@
 </head>
     
 <body>
-
   <header class="clearfix"><a href="index.html">
   <figure class="logo">
       <img src="images/logo0.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
@@ -22,10 +21,10 @@
   <h2 class="subheading">Stay up to date</h2>
   </header>
 
-  <nav class="clearfix" id="navigation">
+  <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-    	<li><a href="#">Home</a></li>
+    	<li><a href="index.html">Home</a></li>
     	<li><a href="#">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
     	<li><a href="#">Springfield</a></li>
@@ -40,6 +39,7 @@
   </figure>
   <div id="today-w">
       <section id="today-weather"><h1>Franklin City</h1></section>
+      <div class="franklin-box">
       <section id="description"><h2>Today's Weather</h2>
       <ul>
         <li>High: 90°</li>
@@ -47,12 +47,15 @@
         <li>Chance of Precipitation: 0%</li>
         <li>Wind: 5mph from the South West</li>
       </ul></section>
+         
+     
       <section id="description2"><h2>Weather Icon</h2>
       <img id="icon" src="images/cloudy.png" alt="franklin-weather">
         </section>
       </div>
+      </div>
       
-       <div>
+       <div class="forecast-box">
         <section class="forecast">
       <h2>Forecast Details</h2>
        <div class="wrapper">
@@ -86,15 +89,16 @@
       <div id="history-day">
       <section id="data-curious"><h2>This day in History</h2>
       <h3>Igor Stravinsky's ballet Le Sacre du printemps is premiered</h3></section>
+          <div class="history-box">
+              <section class="curiosities"><figure id="poster"><img src="images/stravinsky-poster.jpg" alt="poster"><figcaption id="caption-tdh">Original Poster of the Premiere</figcaption></figure></section>
           
-          <section id="curiosities"><figure id="poster"><img src="images/stravinsky-poster.jpg" alt="poster"><figcaption id="caption-tdh">Original Poster of the Premiere</figcaption></figure>
-          
-          <p>On this day in history, Igor Stravinsky performance sparked a riot in the audience as many felt its irregular beat and the percussive character was a sacrilege against music. Today, it is considered one of the key works of 20th-century art music.<br>In the mid-20th century, Stravinsky revised the orchestration for concert performance, and that version of the score remains the version that is most commonly performed.<br>In 1987, however, the ballet as it was first conceived and performed, with original set and costumes and Nijinsky’s choreography (which had been seen for only seven performances before it was superseded by new choreography from Léonide Massine), was painstakingly reconstructed and re-created by the Joffrey Ballet. The centenary of the ballet’s premiere prompted other ballet companies, notably the Mariinsky in St. Petersburg, to also revive the work in its original form.</p><br><strong>Learn more on <a href="https://www.britannica.com/topic/The-Rite-of-Spring" target="_blank">Encyclopedia Britannica</a></strong></section>
+          <section class=details><p>On this day in history, Igor Stravinsky performance sparked a riot in the audience as many felt its irregular beat and the percussive character was a sacrilege against music. Today, it is considered one of the key works of 20th-century art music.<br>In the mid-20th century, Stravinsky revised the orchestration for concert performance, and that version of the score remains the version that is most commonly performed.<br>In 1987, however, the ballet as it was first conceived and performed, with original set and costumes and Nijinsky’s choreography (which had been seen for only seven performances before it was superseded by new choreography from Léonide Massine), was painstakingly reconstructed and re-created by the Joffrey Ballet. The centenary of the ballet’s premiere prompted other ballet companies, notably the Mariinsky in St. Petersburg, to also revive the work in its original form.</p><br><strong>Learn more on <a href="https://www.britannica.com/topic/The-Rite-of-Spring" target="_blank">Encyclopedia Britannica</a></strong></section>
           </div>
-  </main>
-    
-  <footer>
-      <section class="box">
+          </div>
+           <br>
+      <div>
+      <h2>Calculate:</h2>
+      <div class="windchill-box">
       <h3>Temperature (°F):</h3> <input type="text" id="tempF" size="5">
       <h3>Speed (MPH):</h3> <input type="text" id="speed" size="5">
       <br>
@@ -102,8 +106,12 @@
       <button type="button" onclick="doInputOutput()">Wind Chill</button>
       <br>
       <div id="outputDiv"></div>
-      </section>
-      
+      </div>
+      </div>
+  </main>
+    <br>
+  <footer class="footer-box">
+           
       <section class="box-1">
       <h3>Address:</h3>
       <p>The Weather Center</p>
@@ -126,7 +134,7 @@
           <span id="currentDate"></span></p>
 
     </footer>
-    
+
     <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/windchill.js"></script>
