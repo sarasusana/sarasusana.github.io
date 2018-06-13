@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Allerta|Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <meta name="description" content="This is the gallery page where is displayed awesome weather related images">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css"> 
+        <title>How's the Weather</title>
+</head>
+    
+<body>
+    
+  <header class="clearfix"><a href="index.html">
+  <figure class="logo">
+      <img src="images/logo0.png" alt="logo" srcset="images/logo1.png 1x, images/logo2.png 2x, images/logo3.png 3x">
+      </figure></a>
+  <h1>How's the Weather</h1>
+  <h2 class="subheading">Stay up to date</h2>
+  </header>
+
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      <div>
+      <h1>Acme Wildwest Table</h1>
+      
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">ACME Wildwest</th>
+    </tr>
+      <tr class="highlighted">
+      <td>Period</td>
+      <td>Sales</td>
+      <td>Sales Goal</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>August</td>
+      <td>$3,590</td>
+      <td>$4,000</td>
+    </tr>
+      <tr>
+      <td>September</td>
+      <td>$4,420</td>
+      <td>$5,000</td>
+    </tr>
+      <tr>
+      <td>October</td>
+      <td>$4,870</td>
+      <td>$5,000</td>
+    </tr>
+      <tr>
+      <td>November</td>
+      <td>$8,610</td>
+      <td class="highlighted">$7,500</td>
+    </tr>
+      <tr>
+      <td>Black Friday</td>
+      <td colspan="2">$3,200</td>
+    </tr>
+      <tr>
+      <td>December</td>
+      <td>$6,820</td>
+      <td>$7,500</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+    </tr>
+  </tfoot>
+</table>
+      
+          </div>
+            
+    </main>
+    <br><br>
+    
+    <footer>
+      
+      <section class="box-1">
+      <h3>Address:</h3>
+      <p>The Weather Center</p>
+      <p>123 Main Street</p>
+      <p>Franklin, MI 87654</p>
+      </section>
+      
+      <section class="box-2">
+      <h3>Phone:</h3>
+      <p>(801) 555-1234</p>
+      </section>
+      
+      <section class="box-2">
+      <h3>Email</h3>
+      <p>contact@youurl.com</p>
+      <p></p>
+      </section>
+          
+      <p id="box-3">&#169; 2018 &#8226; All right reserved <br>
+          <span id="currentDate"></span></p>
+
+    </footer>
+
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+    </body>
+</html>
+
+      

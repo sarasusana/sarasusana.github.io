@@ -1,0 +1,205 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'Allerta', sans-serif;
+}
+
+header, nav, main, footer { 
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+    padding: .5rem 2%;
+    background: white;
+}
+header h1 {
+    font-size: 20px;
+    color: #1B3440;
+    margin: 0;
+}
+header h2 {
+    font-size: 16px;
+    color: #4A849F;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+
+
+nav {
+   background-color: #B4D6C6;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #F5F1D5;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+nav ul li {
+    font-size: 16px;
+    color: #1B3440;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #1B3440; 
+    border-top: 1px solid rgba(245,241,213,0.4);
+}
+nav ul li.active a { 
+    color: #F5F1D5;
+    background-color: rgba(242,132,92,0.2);
+}
+nav ul li a:hover {
+    background-color: #F2845C;
+}
+nav ul.hide { display: none; }
+
+
+main {
+    padding: 0.2%;
+}
+main figure.hero { width: 100%; margin: 0; }
+main figure.hero img { width: 100%; }
+/*main div {
+    display: block;
+}*/
+main div h1 { 
+    color: #1B3440;
+}
+main div h2 {
+    color: #F2845C;
+    font-size: 18px;
+}
+main div h3 { 
+    color: #4A849F;
+    font-size: 15px;
+}
+main figure { 
+    margin: 0 .1em 2%; 
+    width:100%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+main figure img { 
+    width: 100%;
+    height: auto;  
+}
+
+#icon { 
+    width: 50%;
+    margin-left:0 auto;
+    margin-right: auto;
+}
+
+main p { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+main ul { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+section.forecast { 
+    display: none;
+}
+
+
+footer {
+    color: #F5F1D5;
+    background-color: #4A849F; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+#box-3 { 
+    background-color: #1B3440;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin: -10px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container { 
+    display: grid;
+}
+div.responsive { width: 100%; }
+div.gallery { 
+    border: 1px solid #ccc; 
+}
+
+.franklin-box, .history-box, .windchill-box {
+    display: flex;
+    flex-direction: column;
+}
+
+ {
+    display: flex;
+    flex-direction: row;
+}
+
+table {
+    font-family: 'Ubuntu', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+thead, tfoot { background-color: #7fb9c2;}
+
+.highlighted {
+    color: #ffffff;
+    background-color: #628ca6;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead th {
+    font-size: 1.5em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed ;
+}
+
+tfoot {
+    font-size: .75em;
+}
+
+
