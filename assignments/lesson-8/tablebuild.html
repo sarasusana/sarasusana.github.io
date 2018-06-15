@@ -6,12 +6,57 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <meta name="description" content="building a data table">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/small.css">
-        <link rel="stylesheet" href="css/medium.css">
-        <link rel="stylesheet" href="css/large.css"> 
         <title>Lesson 8: Data Table</title>
 </head>
+<style>
+    table {
+    font-family: 'Ubuntu', sans-serif;
+    border-collapse: collapse;
+    width: 300px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left:auto; 
+    margin-right:auto;
+}
+h1 { 
+    font-family: 'Ubuntu', sans-serif; 
+    text-align: center;
+    }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+thead, tfoot { background-color: #7fb9c2;}
+
+.highlighted {
+    color: #ffffff;
+    background-color: #628ca6;
+}
+
+thead {
+    font-weight: bold;
+}
+
+thead th {
+    font-size: 1.5em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed ;
+}
+
+tfoot {
+    font-size: .75em;
+}
+
     
+    </style>   
 <body>
     
   
