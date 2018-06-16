@@ -40,7 +40,7 @@
     <form method="get" action="thanks.html">
       <fieldset>
         <legend>Reporter Information</legend>
-          <label class="top">Full Name: <input type="text" name="fullname" pattern="[A-Za-z]{5}" title="Five character minimum" required></label>
+          <label class="top">Full Name: <input type="text" name="fullname" pattern="[A-Za-z]{5,}" title="Five character minimum" required></label>
           <label class="top">Email: <input type="email" name="email" placeholder="someone@example.com">
           </label>
           <label class="top">Phone Number: <input type="tel" name="phone" placeholder="1234560987" required> </label>
@@ -50,8 +50,8 @@
         
         <fieldset>
         <legend>Weather Information</legend>
-            <label class="top">Storm Date: <input type="date"name="completeDate"></label>
-            <label class="top">Storm Type: <select list="storm-types" name="storm">
+            <label class="top">Storm Date: <input type="date" name="completeDate"></label>
+            <label class="top">Storm Type: <select name="storm">
             <datalist>
                 <option value="Please Select">Please Select</option>
                 <option value="flash food">Flash Food</option>
@@ -59,13 +59,13 @@
                 <option value="hurricane">Hurricane</option>
                 <option value="thunderstorm">Thunderstorm</option>
                 <option value="tornado">Tornado</option>
-                </datalist>
+            </datalist>
                 </select>
             </label> 
             <div>Rating (1 to 10):</div>
             <label for="rating" class="sbs"><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		    <span id="ratingvalue">5</span><br></label>
-            <label class="top">Storm Region: <select list="region" name="region">
+            <label class="top">Storm Region: <select name="region">
             <datalist>
                 <option value="select region">Select Region</option>
                 <option value="Franklin">Franklin</option>
@@ -83,7 +83,7 @@
         <fieldset>
             <legend>Additional Information</legend>
             <div>Add more details of event:</div>
-            <textarea class="comments"placeholder="More details..."></textarea>
+            <textarea class="comments" placeholder="More details..."></textarea>
             
             </fieldset>
         
