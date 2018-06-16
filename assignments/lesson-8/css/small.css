@@ -11,6 +11,8 @@ header, nav, main, footer {
   margin-right: auto;
 }
 
+/*------------header------------*/
+
 header {
     padding: .5rem 2%;
     background: white;
@@ -31,7 +33,7 @@ header figure.logo {
     margin: 0 2% 0 0;
 }
 
-
+/*------------nav------------*/
 
 nav {
    background-color: #B4D6C6;
@@ -69,6 +71,8 @@ nav ul li a:hover {
 }
 nav ul.hide { display: none; }
 
+
+/*------------main------------*/
 
 main {
     padding: 0.2%;
@@ -121,6 +125,8 @@ section.forecast {
 }
 
 
+/*------------footer------------*/
+
 footer {
     color: #F5F1D5;
     background-color: #4A849F; 
@@ -145,6 +151,9 @@ footer {
     clear: both;
 }
 
+
+/*------------franklin page------------*/
+
 .container { 
     display: grid;
 }
@@ -164,4 +173,83 @@ div.gallery {
 }
 
 
+/*------------form_storm center------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #B4D6C6;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #F2845C;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #4A849F;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none; 
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(245,241,213,0.3);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #4A849F;
+    font-size: .85rem;
+}
+
+form label.level {
+    display: block;
+    padding: .75rem 0;
+    color: #1B3440;
+    font-size: 1rem;
+}
+
+form textarea.comments {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: .5px solid rgba(27,52,64,0.5);
+    border-radius: 4px;
+    color: #555;
+    background-color: rgba(245,241,213,0.3);
+    font-size: 1rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #F2845C;
+    color: #F5F1D5;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem; 
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem; 
+}
+
+form label.top input:required {
+    border: red solid 1.2px;
+}
+
+form label.top input:required:valid {
+    border: green solid 1.2px;
+}
 
