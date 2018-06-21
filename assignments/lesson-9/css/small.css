@@ -1,0 +1,255 @@
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'Allerta', sans-serif;
+}
+
+header, nav, main, footer { 
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*------------header------------*/
+
+header {
+    padding: .5rem 2%;
+    background: white;
+}
+header h1 {
+    font-size: 20px;
+    color: #1B3440;
+    margin: 0;
+}
+header h2 {
+    font-size: 16px;
+    color: #4A849F;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+/*------------nav------------*/
+
+nav {
+   background-color: #B4D6C6;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #F5F1D5;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+nav ul li {
+    font-size: 16px;
+    color: #1B3440;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #1B3440; 
+    border-top: 1px solid rgba(245,241,213,0.4);
+}
+nav ul li.active a { 
+    color: #F5F1D5;
+    background-color: rgba(242,132,92,0.2);
+}
+nav ul li a:hover {
+    background-color: #F2845C;
+}
+nav ul.hide { display: none; }
+
+
+/*------------main------------*/
+
+main {
+    padding: 0.2%;
+}
+main figure.hero { width: 100%; margin: 0; }
+main figure.hero img { width: 100%; }
+/*main div {
+    display: block;
+}*/
+main div h1 { 
+    color: #1B3440;
+}
+main div h2 {
+    color: #F2845C;
+    font-size: 18px;
+}
+main div h3 { 
+    color: #4A849F;
+    font-size: 15px;
+}
+main figure { 
+    margin: 0 .1em 2%; 
+    width:100%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+main figure img { 
+    width: 100%;
+    height: auto;  
+}
+
+#icon { 
+    width: 50%;
+    margin-left:0 auto;
+    margin-right: auto;
+}
+
+main p { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+main ul { 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+section.forecast { 
+    display: none;
+}
+
+
+/*------------footer------------*/
+
+footer {
+    color: #F5F1D5;
+    background-color: #4A849F; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
+#box-3 { 
+    background-color: #1B3440;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin: -10px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*------------franklin page------------*/
+
+.container { 
+    display: grid;
+}
+div.responsive { width: 100%; }
+div.gallery { 
+    border: 1px solid #ccc; 
+}
+
+.franklin-box, .history-box, .windchill-box {
+    display: flex;
+    flex-direction: column;
+}
+
+ {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*------------form_storm center------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #B4D6C6;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #F2845C;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #4A849F;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none; 
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(245,241,213,0.3);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #4A849F;
+    font-size: .85rem;
+}
+
+form label.level {
+    display: block;
+    padding: .75rem 0;
+    color: #1B3440;
+    font-size: 1rem;
+}
+
+form textarea.comments {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: .5px solid rgba(27,52,64,0.5);
+    border-radius: 4px;
+    color: #555;
+    background-color: rgba(245,241,213,0.3);
+    font-size: 1rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #F2845C;
+    color: #F5F1D5;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem; 
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem; 
+}
+
+form label.top input:required {
+    border: red solid 1.2px;
+}
+
+form label.top input:required:valid {
+    border: green solid 1.2px;
+}
+
