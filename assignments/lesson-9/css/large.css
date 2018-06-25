@@ -13,6 +13,11 @@
     
     nav ul li a { padding: .6rem 1rem; }
     main div h1 { text-align: center;}
+    
+    .franklin-box {
+        justify-content: space-around;
+    }
+    
 .container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10px;
@@ -20,5 +25,48 @@
 }
 div.responsive:hover {box-shadow: 5px 5px 10px gray;}
 
+    main div.wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-row-gap: 0;
+        grid-column-gap: 10px;
+        grid-template-areas: 
+             "a a a a a b b b b"
+             "a a a a a b b b b"
+             "c c c d d d e e e"
+             "c c c d d d e e e"
+             "f f f g g g h h h"
+             "f f f g g g h h h";
+    }
     
+    
+    .item1 {
+        grid-area: a;
+        grid-row-gap: 0;
+    }
+    .item2 {
+        grid-area: b;
+    }
+    .item3 {
+        grid-area: c;
+    }
+    .item4 {
+        grid-area: f;
+    }
+    .item5 {
+        grid-area: d;
+    }
+    .item6 {
+        grid-area: g;
+    }
+    .item7 {
+        grid-area: e;
+    }
+    .item8 {
+        grid-area: h;
+    }
+
+    a:link {
+    text-decoration: none;
+}
 }
