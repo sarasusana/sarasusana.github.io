@@ -1,0 +1,188 @@
+@media only screen and (min-width: 35em) { 
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+    header, nav, main, footer { 
+        max-width: 35rem;
+        margin: auto;
+    }
+    
+    #navigation {justify-content: space-around;}
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    nav ul { 
+        margin-left: 2%; 
+    }
+    
+    nav ul li { 
+        float: left;
+        font-size: 12px;
+    }
+    
+    nav ul li a { 
+        border: none;
+        border-right: 1px solid rgba(245,241,213,0.3);
+        padding: .8rem 1rem;
+    }
+    
+    nav ul.hide { 
+        display: inline-flex;
+    }
+    
+      section.forecast { 
+          display: grid;
+          text-align: center;
+    }
+    
+    main figure img{ width: 100%; }
+    
+   /* #today-w { 
+        width: 100%;
+        height: auto;
+    }
+    #today-weather { 
+        width: 100%;
+    }
+        
+    #description { float: left; }
+    
+    #description2 { margin-left: 60%; }*/
+    
+    .franklin-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    #icon { width: 25%; }
+    
+.wrapper-table {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: auto;  
+}
+
+.mainItem {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    padding: .5em;
+    border: 2px solid #B4D6C4;
+    
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #B4D6C4;
+    align-items: center;
+}
+
+    
+    /*#history-day { 
+        display: inline-block;
+    }
+    
+    div #poster { 
+        width: 20%;
+        float: right;
+        margin-left: 1em;
+    }*/
+    
+ 
+    .history-box {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+       
+    footer .box-1 { 
+        float: left; 
+        width: 50%;
+    }
+    
+    .windchill-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    footer .box-2 { 
+        margin-left: 50%;
+    }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    grid-row-gap: 1em;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 10px;
+        grid-row-gap: 1em;
+        grid-template-areas: 
+             "a a a b b b"
+             "a a a b b b"
+             "c c c d d d"
+             "c c c d d d"
+             "e e e f f f"
+             "e e e f f f"
+             "g g g h h h"
+             "g g g h h h";
+    }
+    .item1 {
+        grid-area: a;
+    }
+    .item2 {
+        grid-area: b;
+    }
+    .item3 {
+        grid-area: d;
+    }
+    .item4 {
+        grid-area: c;
+    }
+    .item5 {
+        grid-area: e;
+    }
+    .item6 {
+        grid-area: f;
+    }
+    .item7 {
+        grid-area: h;
+    }
+    .item8 {
+        grid-area: g;
+    }
+
+    
+}/*show the 10-day forecast with the medium view and up */
+    
+      /* .weather-table { 
+        border-collapse: collapse;
+    }
+    
+   .ten-days { 
+        text-align: center;
+        font-family: 'Allerta', sans-serif;
+        color: #1B3440;
+    }
+    
+  .forecast th, .forecast td  { 
+        border: 2px solid #B4D6C4;
+        text-align: center; 
+        padding: .25em;
+    }*/
+
+
+ 
+
+
