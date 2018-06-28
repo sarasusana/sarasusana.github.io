@@ -23,7 +23,7 @@
 
   <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
-    <ul class="hide" id="mainmenu">
+    <ul class="hide" id="primaryNav">
     	<li class="active"><a href="index.html">Home</a></li>
     	<li><a href="franklin-9.html">Franklin</a></li>
     	<li><a href="#">Greenville</a></li>
@@ -133,7 +133,7 @@
    
 </body>
     
-     <script src="js/currentdate.js"></script>
+    <script src="js/currentdate.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/windchill.js"></script>
     <script src="js/towndata.js"></script>
@@ -145,7 +145,7 @@
         var pageHREF=urlArray[urlArray.length-1];
         
         if (pageHREF !=="") {
-            var menu = document.querySelectorAll('ul#mainmenu li a');
+            var menu = document.querySelectorAll('ul#primaryNav li a');
             var i;
             //loop through all the menu items in the navigation
             for(i=0; i<menu.length; i++) {
