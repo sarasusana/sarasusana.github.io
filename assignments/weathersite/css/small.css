@@ -87,15 +87,15 @@ main div h1 {
 }
 main div h2 {
     color: #F2845C;
-    font-size: 18px;
+    font-size: 22px;
 }
 main div h3 { 
     color: #4A849F;
-    font-size: 15px;
+    font-size: 18px;
 }
 main figure { 
     margin: 0 .1em 2%; 
-    width:100%;
+    width: 100%;
     text-align: center;
     font-style: italic;
     font-size: smaller;
@@ -106,15 +106,15 @@ main figure img {
     height: auto;  
 }
 
-#icon { 
-    width: 50%;
+/*#icon { 
+    width: 100%;
     margin-left:0 auto;
     margin-right: auto;
-}
+}*/
 
 main p { 
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 main ul { 
     font-family: 'Raleway', sans-serif;
@@ -123,10 +123,39 @@ main ul {
 section.forecast { 
     display: none;
 }
-main div.wrapper {
-    display: grid; 
-    
+
+main div#history-day {
+    margin: 2em 0;
+    padding: 1em;
+    background-color: rgba(180,214,198,0.5);
 }
+
+main div#curious-data {
+    margin: 2em 0;
+    padding: 1em;
+    background-color: rgba(245,241,213,0.5);
+}
+
+main div#curious-fact {
+    margin: 2em 0;
+    padding: 1em;
+    background-color: rgba(74,132,159,0.3);
+}
+
+
+/*------------button------------*/
+
+main button {
+    border: none;
+    background-color: #F2845C;
+    color: #F5F1D5;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem; 
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: auto; 
+}
+
 
 
 /*------------footer------------*/
@@ -200,7 +229,7 @@ form label.top, form div {
     display: block;
     padding-top: 1rem;
     color: #4A849F;
-    font-size: .8rem;
+    font-size: 1.2rem;
 }
 
 form label.top input, form label.top select {
@@ -220,7 +249,7 @@ form label.sbs {
     display: block;
     padding: .75rem 0;
     color: #4A849F;
-    font-size: .85rem;
+    font-size: 1.1rem;
 }
 
 form label.level {
@@ -262,17 +291,51 @@ form label.top input:required:valid {
 }
 
 
-/*------------index page (grid)------------*/
+/*------------index page------------*/
 
-.wrapper {
-    display: grid;
+main div.wrapper {
+    display: block;
 }
 
-a:link {
+div a:link {
     text-decoration: none;
 }
+
+div.odd:hover { box-shadow: 5px 5px 10px gray; }
+div.even:hover {box-shadow: 5px 5px 10px gray; }
 
 div p {
     color: black;
 }
 
+div.odd {
+    border: 2px solid #F2845C;
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: .5em;
+    background-color: rgba(245,241,213,0.5);
+} 
+
+main div.wrapper div.item2 img {
+    width: 100%;
+}
+
+div.even {
+    border: 2px solid #B4D6C6;
+    border-radius: 8px;
+    margin: 10px auto;
+    padding: .5em;
+    background-color: rgba(74,132,159,0.3);
+} 
+
+/*main div.wrapper div.item4 img {
+    width: 100%;
+}
+
+main div.wrapper div.item6 img {
+    width: 100%;
+}
+
+main div.wrapper div.item8 img {
+    width: 100%;
+}
