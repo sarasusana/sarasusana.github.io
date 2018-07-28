@@ -7,6 +7,24 @@
         margin: auto;
     }
     
+    main div#flush-left {
+        left: 60%;
+        transform: translate(-35%, -50%);
+}
+
+    main div#flush-left h1{
+        font-size: 30px;
+}
+
+    main div#flush-left h2{
+        font-size: 25px;
+}
+    
+    main div#flush-left button {
+        display: grid;
+        font-size: 20px;
+        width: 50%
+} 
     main div.centered {
         font-size: 30px;
     }
@@ -18,17 +36,23 @@
     }
     
     main div.inline2 {
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 25px;
-    padding: 5px;
-    text-align: left;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 25px;
+        padding: 5px;
+        text-align: left;
     }
 
     main div.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     
+    main div span#linkToHome {
+        display: none;
+    }
+    main div#flush-left form {
+        display: grid;
+    }
     main div.tab {
         grid-template-columns: auto auto auto;
     }
@@ -57,11 +81,7 @@
         display: inline-flex;
     }
     
-      section.forecast { 
-          display: grid;
-          text-align: center;
-    }
-    
+     
     main figure img{ width: 100%; }
     
    #today-w { 
@@ -85,7 +105,7 @@
     
     #icon { width: 25%; }
     
-.wrapper-table {
+div.wrapper-table {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-auto-rows: auto;  

@@ -146,6 +146,19 @@ div.responsive:hover {box-shadow: 5px 5px 10px gray;}
         display: table;
         clear: both;
     }
+    
+    /*------------contact page------------*/
+
+    main div.contactbox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    
+    div.form, div.address {
+        border: 2px solid #1A2F40;
+        padding: 10px;
+        border-radius: 15px;
+    }
 
     
   

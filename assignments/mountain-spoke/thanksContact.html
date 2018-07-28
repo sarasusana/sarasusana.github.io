@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css"> 
-        <title>Mountain Spoke | Contact Us</title>
+        <title>Mountain Spoke | Message Confirmation</title>
 </head>
 <body>
 
@@ -37,47 +37,22 @@
   <main>
       <div class="master-box">
   <figure class="hero">
-  	<img src="images/contact.jpg" alt="biker-competition" sizes="100vw" srcset="images/contact400.jpg 400w, images/contact800.jpg 800w, images/contact1200.jpg 1200w">
+  	<img src="images/thanksContact.jpg" alt="biker-competition" sizes="100vw" srcset="images/thanksContact400.jpg 400w, images/thanksContact800.jpg 800w, images/thanksContact1200.jpg 1200w">
   </figure>
-  <div class="centered"><h1>Contact Us</h1></div>
+  <div id="flush-left">
+      <h1>Message Confirmation</h1>
+      <h2 id="align-text">Thanks for messaging us. We will email you back as soon as possible. <span id="linkToHome"><a href="index.html">Go Home</a></span></h2>
+      <form action="index.html">
+    <input type="submit" class="submitBtn" value="Go Home">
+      </form>
           </div>
-
-      <div class="contactbox">
-      <div class="form">
-      <div><h2>Get in touch</h2>
-          <p>Have you a question, inquiry, or feedback for us? Just jot it down below and we'll email you back as soon as possible</p>
-      </div>
-      
-      <div>
-          <form method="get" action="thanksContact.html">
-              <fieldset id="contact-form">
-        <legend></legend>
-          <label class="top">Full Name: <input type="text" name="fullname" required></label>
-          <label class="top">Email: <input type="email" name="email" placeholder="someone@example.com" required>
-          </label>
-          <label class="top">Message:</label>
-            <textarea class="comments" placeholder="Write your message..." required></textarea>
-        <br><br>
-        </fieldset>
-               <input type="submit" value="Send My Message" class="submitBtn">
-          </form>
-          </div></div>
-      <div class="address">
-          <div>
-              <h2>Address</h2>
-              <p>3950 Valley Commons Drive, Bozeman, MT</p>
-              <p>(999) 999 999</p>
-          </div>
-      <div id="map"></div>
-      </div>
-      </div>
-
+          </div>           
   </main>
     
   <footer>
       <section class="box1">
       <h3>Mountain Spoke Company</h3>
-      <h3>Valley Commons Drive</h3>
+      <h3>123 Main St.</h3>
       <h3>Bozeman, Montana</h3>
       <h3>(999) 999 999</h3>
       <h3>contact@example.com</h3>
@@ -98,9 +73,6 @@
     <script src="js/hamburguer.js"></script>
     <script src="js/date.js"></script>
     <script src="js/countries.js"></script>
-    <script src="js/googleMap.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCx3DuOAfNOQY71RaLewgP1pleouyWm0-o&callback=initMap"
-    async defer></script>
     <script>
     
         var urlString = document.location.href;

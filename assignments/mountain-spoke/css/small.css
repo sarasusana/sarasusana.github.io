@@ -94,9 +94,7 @@ main figure.hero img {
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */
 }
-/*main div {
-    display: block;
-}*/
+
 main div h1 { 
     color: #1B3440;
 }
@@ -121,19 +119,13 @@ main figure img {
     height: auto;  
 }
 
-/*#icon { 
-    width: 100%;
-    margin-left:0 auto;
-    margin-right: auto;
-}*/
-
 main p { 
     font-family: 'Gentium Book Basic', serif;
     font-size: 18px;
 }
 main ul { 
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 18px;
 }
 
 main div.master-box {
@@ -147,7 +139,30 @@ main div.centered {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Caveat', cursive;
+    text-align: center;
 }
+
+main div#flush-left {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-25%, -50%);
+    font-family: 'Caveat', cursive;
+    text-align: left;
+}
+
+main div#flush-left h1{
+    text-align: left;
+    font-size: 23px;
+}
+
+main div#flush-left h2{
+    font-size: 20px;
+}
+
+/*#align-text {
+    margin-left: 50%;
+}*/
 
 main div.master-box figure {
     opacity: 0.9;
@@ -169,12 +184,26 @@ main div.inline2 {
 main div.container {
     display: grid;
 }
+
+main div#map {
+    width: 100%;
+    height: 300px;
+}
+
+main div span#linkToHome {
+    font-size: 17px; 
+}
+
+main div#flush-left form {
+    display: none;
+}
+
 /*------------button------------*/
 
 main button {
     border: none;
     background-color: #65D6D0;
-    color: #D6D25C;
+    color: #F2F0D5;
     border-radius: 1rem;
     padding: .5rem 1rem;
     margin: 0 0 2%;
@@ -253,40 +282,38 @@ iframe {
 }
 
 
-/*------------franklin page------------*/
+/*------------services page------------*/
 
 
-div.responsive { width: 100%; }
-div.gallery { 
-    border: 1px solid #ccc; 
+table {
+    font-family: 'Quicksand', serif;
+    border-collapse: collapse;
+    width: auto;
+    margin-left:auto; 
+    margin-right:auto;
 }
 
-.franklin-box, .history-box, .windchill-box {
-    display: flex;
-    flex-direction: column;
+table ul{
+    font-family: 'Quicksand', serif;
 }
 
- /*div.today-w {
-    display: flex;
-    flex-direction: row;
-}*/
-
-ul {
-    list-style-type:none;
+th, td {
+    border: 1px solid #65D6D0;
+    text-align: left;
+    padding: 8px;
 }
 
-
-/*------------form_storm center------------*/
+/*------------form------------*/
 
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #65D6D0;
     border-radius: 10px;
-    padding: .5rem 2%;
+    padding: 1rem 2%;
 }
 
 form legend {
-    color: #D6D25C;
+    color: #BFA673;
     margin: 0 1rem;
     padding: 0 .5rem;
     font-weight: bold;
@@ -309,7 +336,7 @@ form label.top input, form label.top select {
     color: #555;
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(242,240,213,0.3);
+    background-color: rgba(242,240,213,0.9);
 }
 
 form label.sbs {
@@ -334,7 +361,7 @@ form textarea.comments {
     border: .5px solid rgba(27,52,64,0.5);
     border-radius: 4px;
     color: #555;
-    background-color: rgba(245,241,213,0.3);
+    background-color: rgba(245,241,213,0.9);
     font-size: 1rem;
 }
 
@@ -357,6 +384,13 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+form fieldset#contact-form {
+    margin: 2rem 0;
+    border: 1px solid transparent;
+    padding: 1rem 2%;
+}
+
 
 
 /*------------index page------------*/
@@ -406,4 +440,10 @@ main div.wrapper div.item6 img {
 
 main div.wrapper div.item8 img {
     width: 100%;
+}
+
+/*------------contact page------------*/
+
+main div.contactbox {
+    display: grid;
 }
