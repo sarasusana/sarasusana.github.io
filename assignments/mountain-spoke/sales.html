@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+        <meta name="description" content="Welcome to Mountain Spoke, the site to bicycle enthusiasts from Bozeman, Montana">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css"> 
+        <title>Mountain Spoke | Events</title>
+</head>
+<body>
+
+      <header class="clearfix"><a href="index.html">
+  <figure class="logo">
+      <img src="images/logobig.png" alt="logo">
+      </figure></a>
+
+  <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul class="hide" id="primaryNav">
+    	<li><a href="index.html">HOME</a></li>
+    	<li><a href="tours.html">TOURS</a></li>
+    	<li><a href="events.html">EVENTS</a></li>
+    	<li><a href="sales.html">SALES</a></li>
+    	<li><a href="services.html">SERVICES</a></li>
+    	<li><a href="contact.html">CONTACT</a></li>
+    </ul>		
+  </nav>
+      
+      </header>
+    
+  <main>
+      <div class="master-box">
+    <figure class="hero">
+  	<img src="images/bikers-competition.jpg" alt="biker-competition" sizes="100vw" srcset="images/bikers-competition400.jpg 400w, images/bikers-competition800.jpg 800w, images/bikers-competition1200.jpg 1200w">
+  </figure>
+          <div class="centered"><h1>Sales</h1></div>
+      </div>
+          
+  
+      
+  </main>
+    
+  <footer>
+      <section class="box1">
+      <h3>Mountain Spoke Company</h3>
+      <h3>123 Main St.</h3>
+      <h3>Bozeman, Montana</h3>
+      <h3>(999) 999 999</h3>
+      <h3>contact@example.com</h3>
+      </section>
+      
+      <section class="box2">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+      </section>
+        <br><br>    
+      <section class="box3">
+          <p id="box-3">&#169; 2018 &#8226; Mountain Spoke Company &#8226; All right reserved <br>
+          <span id="currentDate"></span></p>
+      </section>
+      
+  </footer>
+    
+    <script src="js/hamburguer.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/countries.js"></script>
+    <script>
+    
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
+        
+        if (pageHREF !=="") {
+            var menu = document.querySelectorAll('ul#primaryNav li a');
+            var i;
+            //loop through all the menu items in the navigation
+            for(i=0; i<menu.length; i++) {
+                var currentURL=(menu[i].getAttribute("href"));
+                menu[i].parentNode.className=""; //turn off highlight by default
+                if (currentURL===pageHREF) {
+                    menu[i].parentNode.className="active"; //turn on if a match
+                } //end if
+            } //end of the search for a match
+        } //end of if !==
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+        <meta name="description" content="Welcome to Mountain Spoke, the site to bicycle enthusiasts from Bozeman, Montana">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css"> 
+        <title>Mountain Spoke | Events</title>
+</head>
+<body>
+
+      <header class="clearfix"><a href="index.html">
+  <figure class="logo">
+      <img src="images/logobig.png" alt="logo">
+      </figure></a>
+
+  <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul class="hide" id="primaryNav">
+    	<li><a href="index.html">HOME</a></li>
+    	<li><a href="tours.html">TOURS</a></li>
+    	<li><a href="events.html">EVENTS</a></li>
+    	<li><a href="sales.html">SALES</a></li>
+    	<li><a href="services.html">SERVICES</a></li>
+    	<li><a href="contact.html">CONTACT</a></li>
+    </ul>		
+  </nav>
+      
+      </header>
+    
+  <main>
+      <div class="master-box">
+  <figure class="hero">
+  	<img src="images/bikers-competition.jpg" alt="biker-competition" sizes="100vw" srcset="images/bikers-competition400.jpg 400w, images/bikers-competition800.jpg 800w, images/bikers-competition1200.jpg 1200w">
+  </figure>
+  <div class="centered"><h1>Cycle the Continental Divide</h1></div>
+          </div>
+      
+  <h2>THE GREAT DIVIDE MOUNTAIN BIKE ROUTE (GDMBR)</h2>
+      
+      <div class="inline">
+      <p>The Great Divide Mountain Bike Route (GDMBR) is the most recognized and important off-pavement cycling route in the United States, if not the world. The route crisscrosses the Continental Divide from north to south starting in Banff, Alberta, Canada and finishing at the US/Mexico border in Antelope Wells, New Mexico.<br><br>To registrate please, <a href="#form">fill the form.</a></p>
+          
+          <figure>
+      <img src="images/route.gif" alt="GreatDivisionRoute">
+              </figure>
+      </div>
+          
+      <div class="container">
+              
+      <div class="inline2">  
+      <div>
+          <img src="images/calendar.png">
+      </div>
+      <div>
+          <h3>Date</h3>
+          <p><b>Start:</b> August 14th, 2018</p>
+          <p><b>End:</b> October 4th, 2018</p>
+                </div>
+          </div>
+      
+      <div class="inline2">
+      <div>
+          <img src="images/route.png">
+          </div>
+      <div>
+          <h3>Route</h3>
+          <p>2,696 Mi.(4,339 KM)</p>
+          <ul>
+              <li>Alberta</li>  
+              <li>British Columbia</li>
+              <li>Montana</li>
+              <li>Idaho</li>
+              <li>Wyoming</li>
+              <li>Colorado</li>
+              <li>New Mexico</li>
+          </ul>
+                </div>
+          </div>
+        
+      <div class="inline2">
+          <div><img src="images/budget.png"></div>
+          <div><h3>Cost</h3>
+          <p>Please, message us for more information</p></div>
+                </div>
+        
+      <div class="inline2">
+          <div><img src="images/requirements.png"></div>
+          <div><h3>Basic Requirements</h3>
+          <p><b>Clothing From Kitsbow</b></p>
+              <ul>
+                  <li>2 XJersey-one Polo, one ventilated riding jersey</li>
+                  <li>2x overshorts</li>
+                  <li>IX ventilated undershorts</li>
+                  <li>Arm/knee warmers</li>
+              </ul>
+          <p><b>Equipment</b></p>
+              <ul>
+                  <li>Tent: Sierra Designs lightning 2</li>
+                  <li>Sleeping Bag</li>
+                  <li>Sleeping Pad: Thermarest prolight</li>
+                  <li>Cooking: Solo Stove x2</li>
+              </ul>
+          <p><b>Bike</b></p>
+              <ul>
+                  <li>Frame: Surly Ogre Medium</li>
+                  <li>Fork: Surly Ogre</li>
+                  <li>Headset: Cane Creek 40</li>
+                  <li>Stem: Thomsom Elite x4</li>
+              </ul>
+          <p><b>Luggage</b></p>
+              <ul>
+                  <li>Racks</li>
+                  <li>Frame Bag</li>
+                  <li>Handlebar Bag</li>
+                  <li>Cage</li>
+              </ul></div>
+                </div>      
+      </div>
+      <p>For more information about requirements visit <a href="http://www.bikepacking.com/routes/great-divide-mountain-bike-route-gdmbr/" target="_blank">Bike Packing</a></p>
+      
+      <div><h2>Fill the form to register in this wonderful adventure</h2></div>
+      <form method="get" action="thanks.html" id="form">
+      <fieldset>
+        <legend>Adventurer Information</legend>
+          <label class="top">Full Name: <input type="text" name="fullname" pattern="[A-Za-z]{5,}" title="Five character minimum" required></label>
+          <label class="top">Email: <input type="email" name="email" placeholder="someone@example.com">
+          </label>
+          <label class="top">Phone Number: <input type="tel" name="phone" placeholder="1234560987" required> </label>
+          <label class="top">Birth Date: <input type="date" name="completeDate"></label>
+          <label class="top">Country:<select id="country" name="country"></select></label>
+          <label class="top">State:<select name="state" id="state"></select></label>
+        </fieldset>
+          
+          <fieldset>
+            <legend>Additional Information</legend>
+            <div>Add any comment or special accommodations:</div>
+            <textarea class="comments" placeholder="More details..."></textarea>
+            
+            </fieldset>
+          
+          <input type="submit" value="Register Me" class="submitBtn">
+          
+      </form>
+      
+  </main>
+    
+  <footer>
+      <section class="box1">
+      <h3>Mountain Spoke Company</h3>
+      <h3>123 Main St.</h3>
+      <h3>Bozeman, Montana</h3>
+      <h3>(999) 999 999</h3>
+      <h3>contact@example.com</h3>
+      </section>
+      
+      <section class="box2">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+      </section>
+        <br><br>    
+      <section class="box3">
+          <p id="box-3">&#169; 2018 &#8226; Mountain Spoke Company &#8226; All right reserved <br>
+          <span id="currentDate"></span></p>
+      </section>
+      
+  </footer>
+    
+    <script src="js/hamburguer.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/countries.js"></script>
+    <script>
+	populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+	populateCountries("country2");
+	populateCountries("country2");
+</script>
+    <script>
+    
+        var urlString = document.location.href;
+        var urlArray = urlString.split('/');
+        var pageHREF=urlArray[urlArray.length-1];
+        
+        if (pageHREF !=="") {
+            var menu = document.querySelectorAll('ul#primaryNav li a');
+            var i;
+            //loop through all the menu items in the navigation
+            for(i=0; i<menu.length; i++) {
+                var currentURL=(menu[i].getAttribute("href"));
+                menu[i].parentNode.className=""; //turn off highlight by default
+                if (currentURL===pageHREF) {
+                    menu[i].parentNode.className="active"; //turn on if a match
+                } //end if
+            } //end of the search for a match
+        } //end of if !==
+        
+    </script>
+
+</body>
+</html>

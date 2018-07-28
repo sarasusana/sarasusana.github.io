@@ -5,14 +5,43 @@
         margin: auto;
     }
     
+    nav button { display:none; }
+    
+    
+    
     #navigation {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-end;
+        justify-content: space-between;
+    }
+  
+    
+    nav ul li { 
+        float: left;
+        font-size: 18px;
     }
     
-    nav ul li a { padding: .6rem 1rem; }
+    nav ul li a { 
+        border: none;
+        border-right: 1px solid rgba(245,241,213,0.3);
+        padding: .8rem 2rem;
+    }
+    
+    nav ul li a:hover {
+        color: #D6D25C;
+        background-color: #65D6D0;
+    }
+    
+    nav ul.hide { 
+        display: inline-flex;
+    }
+   
+    
     main div h1 { text-align: center;}
+    
+    main div.centered {
+        font-size: 35px;
+    }
     
     .franklin-box {
         justify-content: space-around;
@@ -27,12 +56,7 @@
         padding-left: 10px;
         width: 50%;
     }
-    
-.container {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    grid-row-gap: 1em;
-}
+
 div.responsive:hover {box-shadow: 5px 5px 10px gray;}
 
     main div.wrapper:after {
@@ -41,7 +65,24 @@ div.responsive:hover {box-shadow: 5px 5px 10px gray;}
         clear: both;
     }
     
-    div#firstbox {
+    main div.inline {
+        grid-template-columns: auto auto auto auto;
+        margin: 2em; 
+        grid-gap: 35px;
+    }
+    
+    main div figure {
+        width: 210px;
+    }
+    
+    main div.container {
+    grid-template-columns: repeat(4, 1fr);
+    }
+    
+    main div.tab {
+        grid-template-columns: auto auto auto auto auto auto;
+    }
+    /*div#firstbox {
         display: inline-block;
         border: 2px solid #F2845C;
         border-radius: 8px;
@@ -105,5 +146,6 @@ div.responsive:hover {box-shadow: 5px 5px 10px gray;}
         display: table;
         clear: both;
     }
+
     
   

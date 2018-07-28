@@ -1,0 +1,224 @@
+@media only screen and (min-width: 35em) { 
+
+    /* Only CSS write declarations that need to be changed. Do not duplicated declarations that are already established in the main.css */
+
+    header, nav, main, footer { 
+        max-width: 35rem;
+        margin: auto;
+    }
+    
+    main div.centered {
+        font-size: 30px;
+    }
+    
+    main div.inline {
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 5px;
+    }
+    
+    main div.inline2 {
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 25px;
+    padding: 5px;
+    text-align: left;
+    }
+
+    main div.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+    main div.tab {
+        grid-template-columns: auto auto auto;
+    }
+
+    
+    /*#navigation {justify-content: space-around;}
+    
+    nav button { display:none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    /*nav ul { 
+        margin-left: 2%; 
+    }
+    
+    nav ul li { 
+        float: left;
+        font-size: 12px;
+    }
+    
+    nav ul li a { 
+        border: none;
+        border-right: 1px solid rgba(245,241,213,0.3);
+        padding: .8rem 1rem;
+    }
+    
+    nav ul.hide { 
+        display: inline-flex;
+    }
+    
+      section.forecast { 
+          display: grid;
+          text-align: center;
+    }
+    
+    main figure img{ width: 100%; }
+    
+   #today-w { 
+        width: 100%;
+        height: auto;
+    }
+    #today-weather { 
+        width: 100%;
+    }
+        
+    #description { float: left; }
+    
+    #description2 { margin-left: 60%; }
+    
+    .franklin-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    #icon { width: 25%; }
+    
+.wrapper-table {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: auto;  
+}
+
+.mainItem {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    border: 2px solid #4A849F;
+    background-color: #4A849F;
+    color: #F5F1D5;
+    font-weight: bold;
+    padding: 1em;
+    font-size: 20px;    
+}
+
+ div.item {
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid #4A849F;
+    align-items: center;
+    background-color: #F5F1D5;
+}
+
+main button {
+    max-width: 9rem; 
+    }
+    
+    /*#history-day { 
+        display: inline-block;
+    }
+    
+    div #poster { 
+        width: 20%;
+        float: right;
+        margin-left: 1em;
+    }
+    
+ 
+        
+    div section.curiosities {
+        margin-left: 5px;
+    }*/
+    
+    footer .box1 { 
+        display: inline-block;
+    }
+    
+    footer .box2 { 
+        float: right;
+        padding: 25px 0;
+    }
+
+
+    
+       
+   /* .wrapper {
+        display: block;    
+    }
+    
+    div.even, div.odd {
+        border-style: none;
+        background-color: white;
+        margin: 20px 0;
+    }
+    
+    div.item1, div.item2, div.item5, div.item6 { 
+        display: inline-block;
+        width: 45%;
+        margin-left: ;
+    }
+    
+    div.item3, div.item4 { 
+        display: inline-block;
+        width: 40%;
+    }
+    
+    div.item1, div.item5 {
+        background-color: rgba(245,241,213,0.5);
+        padding: .5em;
+        border: 2px solid #F2845C;
+        border-radius: 8px;
+    }
+    
+    div.item2 {
+        float: right;
+    }
+    
+    div.item3 {
+        margin-left: 80px;
+        background-color: rgba(74,132,159,0.3);
+        border: 2px solid #B4D6C6;
+        border-radius: 8px;
+        padding: .5em;
+    }
+    
+    div.item4 {
+        float: left;
+    }
+    
+    div.item6 {
+        float: right;
+    }*/
+    
+    
+
+    
+    
+
+ 
+    
+}/*show the 10-day forecast with the medium view and up */
+    
+      /* .weather-table { 
+        border-collapse: collapse;
+    }
+    
+   .ten-days { 
+        text-align: center;
+        font-family: 'Allerta', sans-serif;
+        color: #1B3440;
+    }
+    
+  .forecast th, .forecast td  { 
+        border: 2px solid #B4D6C4;
+        text-align: center; 
+        padding: .25em;
+    }*/
+
+
+ 
+
+
