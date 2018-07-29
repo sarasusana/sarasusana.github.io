@@ -418,17 +418,10 @@ div.odd {
     background-color: rgba(245,241,213,0.5);
 } 
 
-main div.wrapper div.item2 img {
+main div.wrapper div.item-2 img {
     width: 100%;
 }
 
-div.even {
-    border: 2px solid #B4D6C6;
-    border-radius: 8px;
-    margin: 10px auto;
-    padding: .5em;
-    background-color: rgba(74,132,159,0.3);
-} 
 
 /*main div.wrapper div.item4 img {
     width: 100%;
@@ -446,4 +439,49 @@ main div.wrapper div.item8 img {
 
 main div.contactbox {
     display: grid;
+}
+
+/*------------sales page------------*/
+main  {
+  height: 600px;
+  width: 100%;
+  padding: 5px;
+  overflow: auto;
+}
+
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+}
+
+#mask {
+  width: 500%;
+  height: 600px;
+}
+
+.item {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.content {
+  width: 400px;
+  height: 300px;
+  top: 20%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.selected {
+  font-weight: 700;
+}
+
+.clear {
+  clear: both;
 }
