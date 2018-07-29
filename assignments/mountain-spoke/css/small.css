@@ -442,7 +442,7 @@ main div.contactbox {
 }
 
 /*------------sales page------------*/
-main  {
+main div#wrapper  {
   height: 600px;
   width: 100%;
   padding: 5px;
